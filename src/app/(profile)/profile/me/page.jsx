@@ -4,25 +4,40 @@ import TextField from "@/src/app/common/TextField";
 import { useGetUser } from "@/src/app/hooks/useAuth";
 import { includeObj } from "@/utils/objectUtils";
 import Loading from "@/src/app/common/Loading";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { updateProfile } from "@/src/app/services/AuthServices";
+import { toast } from "react-hot-toast";
 
 function MePage() {
   const { data, isLoading } = useGetUser();
+  const queryClient = useQueryClient()
+ const {mutateAsync, isLoading:isUpdating} = useMutation({mutationFn:updateProfile})
   const { user } = data || {};
+  const [formData, setFormData] = useState({});
   
   const includesKey = ["name", "email", "phoneNumber", "biography"];
-  const [formData, setFormData] = useState({});
   
   useEffect(() => {
       if(user) setFormData(includeObj(user,includesKey))
     },[user])
-
+const submitHandler = async (e) =>{
+e.preventDefault()
+try {
+    const {message} = await mutateAsync(formData);
+    queryClient.invalidateQueries({queryKey:["get-user"]})
+    toast.success(message)
+} catch (error) {
+    toast.error(error?.response?.data?.message)
+}
+}
 if (isLoading) return <Loading />;
+if (isUpdating) return <Loading />;
   return (
     <div className="ml-4 p-4 min-h-screen border border-gray-100 rounded-lg">
       <div className="border-b border-gray-100 pb-[16px]">
         <h1>پروفایل من</h1>
         <div>
-          <form>
+          <form onSubmit={submitHandler}>
             {Object.keys(includeObj(user, includesKey)).map((key) => {
               return (
                 <TextField

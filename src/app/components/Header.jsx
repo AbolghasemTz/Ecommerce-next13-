@@ -13,6 +13,7 @@ import AuthPage from "../(user)/auth/page";
 
 
 import { useGetUser } from "../hooks/useAuth";
+import { loguot } from "../services/AuthServices";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,10 @@ function Header() {
 
   const { data } = useGetUser();
   const { user, cart } = data || {};
-
+  const logoutHandler =async()=>{
+    await loguot();
+    document.location.href = "/"
+  }
   return (
     <header className={styled.header}>
       <div className={styled.header_info}>
@@ -84,7 +88,7 @@ function Header() {
                           <Link href="/admin">پنل ادمین</Link>
                         </li>
                       )}
-                      <li className="mt-3">خروج</li>
+                      <li className="mt-3"><button onClick={logoutHandler}>خروج</button></li>
                     </ul>
                   </div>
                 )}{" "}

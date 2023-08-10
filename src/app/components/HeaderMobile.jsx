@@ -19,7 +19,10 @@ function HeaderMobile() {
 
   const { data } = useGetUser();
   const { user, cart } = data || {};
-
+  const logoutHandler =async()=>{
+    await loguot();
+    document.location.href = "/"
+  }
 
   return (
     <>
@@ -107,7 +110,7 @@ function HeaderMobile() {
                           <Link href="/admin">پنل ادمین</Link>
                         </li>
                       )}
-                      <li className="mt-3">خروج</li>
+                      <li className="mt-3"><button onClick={logoutHandler}>خروج</button></li>
                     </ul>
                   </div>
                 )}{" "}

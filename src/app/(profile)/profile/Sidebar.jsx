@@ -4,10 +4,16 @@ import "../../globals.css";
 import Image from 'next/image'
 import Link from 'next/link'
 import { useGetUser } from '../../hooks/useAuth';
+import { loguot } from '../../services/AuthServices';
 
 function sidebar() {
+  
   const {data} = useGetUser();
   const {user} = data || {};
+  const logoutHandler =async()=>{
+    await loguot();
+    document.location.href = "/"
+  }
   return (
     <div className='w-[288px] h-[342px] px-4 border border-gray-100 rounded-lg ml-[24px] mr-[24px]'>
     <div className='flex justify-start items-center py-[16px] border-b'>
@@ -25,6 +31,7 @@ function sidebar() {
         <li><Link href="/">صفحه اصلی</Link></li>
         <li><Link href="/profile">داشبورد</Link></li>
         <li><Link href="/profile/me">اطلاعت کاربری</Link></li>
+        <li><button onClick={logoutHandler} className='text-[#C30000]'>خروج</button></li>
       </ul>
     </div>
     </div>
