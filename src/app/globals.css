@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .textFiled_label{
+    @apply text-[#353535] text-[12px] font-[400] absolute -top-[11px] right-4 px-[3px] bg-white
+  }
+  .textFiled_input{
+    @apply md:w-[344px] w-full  h-[40px] text-[#353535] text-[16px] px-2 rounded-md border border-[#353535] focus:outline-none focus:ring-2 focus:ring-[#417F56] focus:border-transparent
+  }
+  .btn {
+    @apply bg-[#417F56] rounded-md text-[#E5F2E9] font-[500] text-[16px]
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-estedad);
+  min-height: 100vh;
+  user-select: none;
+}

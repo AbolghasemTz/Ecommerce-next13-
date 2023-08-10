@@ -1,0 +1,65 @@
+@tailwind components;
+
+
+
+@layer components {
+    .header {
+        @apply w-full lg:px-[108px] md:px-[55px] hidden md:block shadow-md py-[32px] sticky z-50 
+    }
+    .header_info {
+        @apply h-full font-[400] flex justify-between items-center 
+    }
+    .header_Link {
+        @apply flex  items-center gap-4 text-[20px] font-[400] text-[#717171] active:text-[#417F56] cursor-pointer duration-200
+    }
+    .header_icons{
+        @apply w-[40px] h-[40px] bg-[#E5F2E9] cursor-pointer text-[#417F56] mx-1 flex justify-center items-center rounded-md
+    }
+    .header_shoppingCart{
+        @apply absolute -top-3 -right-2 text-xs bg-[#417F56] w-5 h-5 rounded-full flex justify-center items-center text-[#E5F2E9]
+    }
+    .dropDownUserIcon{
+        @apply w-[170px] text-[16px] shadow-md  absolute top-12 -right-9 bg-[#396F4B] p-2 rounded-md
+    }
+
+
+     /* MOBILE */
+
+    .header_mobile{
+        @apply w-full md:hidden shadow-md h-20 lg:h-[12] sticky flex justify-between items-center  z-50  px-4
+    }
+
+    .header_burgerMenu{
+        @apply w-6 h-5 flex flex-col justify-between items-center text-4xl cursor-pointer overflow-hidden top-7
+    }
+    .header_link_mobile {
+        @apply flex items-center gap-1 text-[17px] font-[400] text-[#417F56] cursor-pointer duration-200
+    }
+
+    .berger_menu {
+        @apply w-full h-[2px] bg-[#417F56] inline-flex transform group-hover:translate-x-2 transition-all ease-in-out duration-300
+    }
+
+    .show_menu{
+        @apply absolute md:hidden p-0 top-20 left-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-start
+    }
+    .show_menuDrower{
+        @apply w-[60%] h-full bg-[#E5F2E9] flex flex-col items-center px-4 py-10 relative
+    }
+    .show_closeIcon{
+        @apply text-3xl text-[#417F56]  cursor-pointer  absolute  top-4 left-4 
+    }
+    .show_items{
+        @apply flex justify-center items-center flex-col
+    }
+
+    .header_mobileIcons{
+        @apply w-[24px] h-[24px] bg-[#E5F2E9] text-[#417F56] mx-1 flex justify-center items-center rounded-md
+    }
+    .header_mobileShoppingCart{
+        @apply absolute -top-3 -right-2 text-xs bg-[#417F56] w-4 h-4 rounded-full flex justify-center items-center text-[#E5F2E9]
+    }
+    .mobile_dropDownUserIcon{
+        @apply w-[130px] shadow-md text-[14px]  absolute top-14 left-2 bg-[#396F4B] p-2 rounded-md
+    }
+}
