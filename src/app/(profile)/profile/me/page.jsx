@@ -54,7 +54,7 @@ if (isUpdating) return <Loading />;
                 />
               );
             })}
-            <button type="submit" className="btn md:w-[344px] h-[40px] w-[90vw]">تایید</button>
+            <button type="submit" className="btn md:w-[344px] h-[40px] w-[100%]">تایید</button>
           </form>
         </div>
       </div>

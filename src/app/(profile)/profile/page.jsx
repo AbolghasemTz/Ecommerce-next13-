@@ -10,7 +10,7 @@ function Profile() {
   if (isLoading) return <Loading />;
 
   return (
-    <div className='ml-[30px] p-4 min-h-screen border border-gray-100 rounded-lg'>
+    <div className='md:ml-[30px] mx-[24px] p-4 min-h-screen border border-gray-100 rounded-lg'>
       <h1><span className='font-bold'>{user?.name}</span> عزیز خوش آمدی !</h1>
       <p>
         <span className='pl-2'>تاریخ پیوستن</span>

@@ -19,8 +19,8 @@ export default function RootLayout({ children }) {
       >
         <Toaster />
         <Providers>
-          <div className="grid grid-cols-4 bg-white h-screen mt-[48px]">
-            <div className="col-span-1 ">
+          <div className="md:grid grid-cols-4 bg-white h-screen md:mt-[48px] mt-[28px] flex flex-col">
+            <div className="col-span-1 md:mb-0 mb-2">
               <SideBar />
             </div>
             <div className="col-span-3">{children}</div>

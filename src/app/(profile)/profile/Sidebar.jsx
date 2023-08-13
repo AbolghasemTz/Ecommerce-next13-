@@ -15,7 +15,7 @@ function sidebar() {
     document.location.href = "/"
   }
   return (
-    <div className='w-[288px] h-[342px] px-4 border border-gray-100 rounded-lg ml-[24px] mr-[24px]'>
+    <div className=' md:h-[342px] px-4 border border-gray-100 rounded-lg ml-[24px] mr-[24px]'>
     <div className='flex justify-start items-center py-[16px] border-b'>
       <div >
         <Image src="/user.jpg" alt="user" width={50} height={50} className='rounded-full w-[50px] h-[50px] '/>
@@ -31,7 +31,7 @@ function sidebar() {
         <li><Link href="/">صفحه اصلی</Link></li>
         <li><Link href="/profile">داشبورد</Link></li>
         <li><Link href="/profile/me">اطلاعت کاربری</Link></li>
-        <li><button onClick={logoutHandler} className='text-[#C30000]'>خروج</button></li>
+        <li><button onClick={logoutHandler} className='text-[#C30000] md:pb-0 pb-[16px]'>خروج</button></li>
       </ul>
     </div>
     </div>
