@@ -18,3 +18,9 @@ export function updateProfile(data) {
 export function loguot() {
     return http.post("/user/logout")
 }
+
+// admin related fetch
+
+export function getAllUsers() {
+    return  http.get("/admin/user/list").then(({data}) => data.data)
+}
