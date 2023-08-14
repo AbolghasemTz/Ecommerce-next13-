@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Admin() {
+function page() {
   return (
     <div>
-     صفحه ادمین
+      پنل ادمین
     </div>
   )
 }
 
-export default Admin
+export default page
