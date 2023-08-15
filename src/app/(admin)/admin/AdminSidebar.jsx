@@ -12,7 +12,7 @@ function AdminSideBar() {
 document.location.href = "/"
   }
   return (
-    <div className='flex flex-cols space-y-8 '>
+    <div className='md:h-auto px-4 border border-gray-100 rounded-lg ml-[24px] mr-[24px]'>
 <ul>
 <li className='py-2 font-semibold'>
     <Link href="/">صفحه اصلی</Link>

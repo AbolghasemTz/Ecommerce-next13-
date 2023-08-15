@@ -3,6 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import { userListTabelHeads } from '@/src/app/constant/tableHeads';
 import { toLocalString } from '@/utils/toLocalString';
+import { GrView } from 'react-icons/gr';
 
 function UserTabel({users}) {
     console.log(users);
@@ -21,17 +22,17 @@ function UserTabel({users}) {
             </tr>
         </thead>
         <tbody>
-          {users.map((user,index) => {
+          {users?.map((user,index) => {
             return <tr key={user._id}>
-                 <td>{index} =</td>
-                 <td className="truncate whitespace-nowrap">{user.name}</td>
-                 <td>{user.email}</td>
-                 <td>{user.phoneNumber} {user.isVerifiedPhoneNumber && <h6 className='text-green-600'>verify</h6>}</td>
-                 <td>{user.Products?.map((product,index) => {
+                 <td className='text-center'>{index}</td>
+                 <td className="truncate whitespace-nowrap text-center">{user.name}</td>
+                 <td className='text-center'>{user.email}</td>
+                 <td className='text-center'>{user.phoneNumber} {user.isVerifiedPhoneNumber && <h6 className='text-green-600'>verify</h6>}</td>
+                 <td className='text-center'>{user.Products?.map((product,index) => {
                   return <div key={index}>{product.title}</div>
                  })}</td>
-                 <td>{toLocalString(user.createdAt)}</td>
-                 <td><Link href={`/admin/users/${user._id}`}>مشاهده کاربر</Link></td>
+                 <td className='text-center'>{toLocalString(user.createdAt)}</td>
+                 <td className='flex justify-center'><Link href={`/admin/users/${user._id}`}><GrView size={18} /></Link></td>
                 
                  
             </tr>

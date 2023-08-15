@@ -38,7 +38,7 @@ router.push(pathname + "?" + createQueryString("sort", value))
 setSort(searchParams.get("sort") || "")
   },[])
   return (
-    <div className='space-y-4'>
+    <div className='space-y-4 '>
       {
         sortOptions.map((item) => {
           return <RadioGroup 

@@ -6,7 +6,10 @@ import { useQueryClient } from '@tanstack/react-query'
 import Link from 'next/link'
 import React from 'react'
 import { toast } from 'react-hot-toast'
-
+import { GrView } from 'react-icons/gr';
+import { CiTrash } from 'react-icons/ci';
+import { AiOutlineEdit } from 'react-icons/ai';
+import { toPersianNumbers, toPersianNumbersWithComma } from '@/utils/toPersianNumber'
 function ProductTabel({products}) {
  const {mutateAsync} =  useRemoveProducts()
  const queryClient = useQueryClient()
@@ -36,21 +39,21 @@ try {
       <tbody>
         {products.map((product,index) => {
           return <tr key={product._id}>
-               <td>{index} =</td>
-               <td className="truncate whitespace-nowrap">{product.title}</td>
-               <td>{product.category?.title}</td>
-               <td>{product.price}</td>
-               <td>{product.discount}</td>
-               <td>{product.offPrice}</td>
-               <td>{product.countInStock}</td>
+               <td className='text-center pt-1'>{toPersianNumbers(index)}</td>
+               <td className="truncate whitespace-nowrap text-center">{product.title}</td>
+               <td className='text-center pt-1'>{product.category?.title}</td>
+               <td className='text-center pt-1'>{toPersianNumbersWithComma(product.price)}</td>
+               <td className='text-center pt-1'>{toPersianNumbers(product.discount)}%</td>
+               <td className='text-center pt-1'>{toPersianNumbersWithComma(product.offPrice)}</td>
+               <td className='text-center pt-1'>{toPersianNumbers(product.countInStock)}</td>
                
-               <td className='flex items-center'>
+               <td className='flex items-center justify-center pt-1'>
                <Link className='font-semibold' href={`/admin/products/${product._id}`}>
-                مشاهده
+               <GrView size={18}  color='#353535'/>
                </Link>
-               <button onClick={() => removeProduct(product._id)} className='mx-3 text-red-500'>del</button>
+               <button onClick={() => removeProduct(product._id)} className='mx-3 text-red-500'><CiTrash size={18} /></button>
                <Link className='font-semibold' href={`/admin/products/edit/${product._id}`}>
-                ed
+               <AiOutlineEdit size={18}  color='#353535'/>
                </Link>
                 </td>
               

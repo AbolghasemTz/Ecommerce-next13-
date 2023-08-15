@@ -4,6 +4,10 @@ import { useQueryClient } from '@tanstack/react-query';
 import Link from 'next/link';
 import React from 'react'
 import { toast } from 'react-hot-toast';
+import { GrView } from 'react-icons/gr';
+import { CiTrash } from 'react-icons/ci';
+import { AiOutlineEdit } from 'react-icons/ai';
+
 
 function CategoryListTabel({categories}) {
   const {mutateAsync} =  useRemoveCategory()
@@ -33,22 +37,22 @@ function CategoryListTabel({categories}) {
       </thead>
       <tbody>
         {categories.map((category,index) => {
-          return <tr key={category._id}>
-               <td>{index} =</td>
-               <td className="truncate whitespace-nowrap">{category.title}</td>
+          return <tr  key={category._id}>
+               <td className='text-center pt-1'>{index}</td>
+               <td className="truncate whitespace-nowrap text-center pt-1">{category.title}</td>
                
-               <td>{category.description}</td>
-               <td>{category.englishTitle}</td>
-               <td>{category.type}</td>
+               <td className='text-center pt-1'>{category.description}</td>
+               <td className='text-center pt-1'>{category.englishTitle}</td>
+               <td className='text-center pt-1'>{category.type}</td>
             
                
-               { <td className='flex items-center'>
+               { <td className='flex items-center justify-center pt-1'>
                <Link className='font-semibold' href={`/admin/categories/${category._id}`}>
-                مشاهده
+               <GrView size={18}  color='#353535'/>
                </Link>
-               <button onClick={() => removeCategoy(category._id)} className='mx-3 text-red-500'>del</button>
+               <button onClick={() => removeCategoy(category._id)} className='mx-3 text-red-500'><CiTrash size={18} /></button>
                <Link className='font-semibold' href={`/admin/categories/edit/${category._id}`}>
-                ed
+               <AiOutlineEdit size={18}  color='#353535'/>
                </Link>
                 </td> }
               

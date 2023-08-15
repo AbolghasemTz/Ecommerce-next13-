@@ -10,7 +10,7 @@ function payments() {
 
 if(isLoading) return <Loading />
   return (
-    <div className="">
+    <div className="mx-[24px]">
       <h1 className="font-bold text-2xl">سفارشات</h1>
       <PaymentTabel payments={payments}/>
     </div>
