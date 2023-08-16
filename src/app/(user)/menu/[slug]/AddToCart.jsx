@@ -35,7 +35,7 @@ function AddToCart({ product }) {
       {inCart(user, product) ? (
         <Link href="/cart">ادمه سفارش</Link>
       ) : (
-        <button onClick={addToCartHandler} className="btn text-[13px] py-2 px-3">
+        <button onClick={addToCartHandler} className="btn ">
           اضافه کردن به سبد خرید
         </button>
       )}

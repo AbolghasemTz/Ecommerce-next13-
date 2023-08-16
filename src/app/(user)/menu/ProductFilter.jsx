@@ -33,7 +33,7 @@ function ProductFilter({categories}) {
     }
   return (
 <div className="md:col-span-1 col-span-5 px-[24px] md:px-0 space-y-4">
-        {categories.map((category) => {
+        {categories?.map((category) => {
           return (
             <Checkbox
               key={category._id}

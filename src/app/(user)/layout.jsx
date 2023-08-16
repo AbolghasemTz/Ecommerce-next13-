@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="fa" dir="rtl">
       <body
         suppressHydrationWarning={true}
-        className={`${estedadFont.variable} font-sans`}
+        className={`${estedadFont.variable} font-sans bg-gray-100`}
       >
         <Toaster />
         <Providers>
