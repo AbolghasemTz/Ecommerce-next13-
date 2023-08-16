@@ -201,7 +201,7 @@ function ContentInfo({ product }) {
                   <span className="font-semibold text-slate-600 text-sm xl:text-lg ">
                     توضیحات:
                   </span>
-                  <span classNameName="text-sm font-medium">
+                  <span className="text-sm font-medium">
                     {product.description}
                   </span>
                 </li>
@@ -209,7 +209,7 @@ function ContentInfo({ product }) {
                   <p className="font-light text-slate-600">
                     قیمت محصول :
                     <span
-                      classNameName={`text-base font-medium mr-2 ${
+                      className={`text-base font-medium mr-2 ${
                         product.discount ? "line-through" : "font-bold"
                       }`}
                     >
@@ -371,12 +371,12 @@ function ContentInfo({ product }) {
             <div className="mt-10">
               <div className="mb-4 w-full text-orange-500 font-bold text-xl text-center">
                 {!!product.discount && (
-                  <div classNameName="flex items-center gap-x-2 mb-6">
-                    <p classNameName="text-sm">
+                  <div className="flex items-center gap-x-2 mb-6">
+                    <p className="text-sm">
                       قیمت با تخفیف :{" "}
                       {toPersianNumbersWithComma(product.offPrice)}
                     </p>
-                    <div classNameName="bg-rose-500 px-2 py-0.5 rounded-xl text-white text-sm">
+                    <div className="bg-rose-500 px-2 py-0.5 rounded-xl text-white text-sm">
                       {toPersianNumbersWithComma(product.discount)} %
                     </div>
                   </div>
