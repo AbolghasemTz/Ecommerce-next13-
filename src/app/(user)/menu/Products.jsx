@@ -48,28 +48,28 @@ function Products({ products }) {
               </div>
 
               <div className="flex justify-between items-center mb-3">
-                <p classNameName="text-slate-800 text-xs font-semibold  sm:text-base">
+                <p className="text-slate-800 text-xs font-semibold  sm:text-base">
                   {product.title}
                 </p>
 
-                <div classNameName="">
+                <div className="">
                   <AiFillHeart size={20} color="red"/>
                 </div>
               </div>
               <div className="font-medium text-center text-sm mb-2 sm:text-base">
                 <span
-                  classNameName={`line-through text-xs sm:text-sm  text-[#777777] ${
+                  className={`line-through text-xs sm:text-sm  text-[#777777] ${
                     product.offPrice && "hidden sm:block"
                   }`}
                 >
                   {toPersianNumbersWithComma(product.price)}تومان
                 </span>
-                <span classNameName="text-sm sm:text-base  text-[#353535] mx-2">
+                <span className="text-sm sm:text-base  text-[#353535] mx-2">
                   {toPersianNumbersWithComma(product.offPrice)}تومان
                 </span>
               </div>
               <hr />
-              <div classNameName="flex justify-center items-center">
+              <div className="flex justify-center items-center">
                 <Link
                   href={`/menu/${product.slug}`}
                   className="w-full text-center text-sm font-semibold text-[#417F56] py-1 md:text-lg"
