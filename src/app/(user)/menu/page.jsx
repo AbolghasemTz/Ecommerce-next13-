@@ -21,7 +21,7 @@ async function Menu({ searchParams }) {
     <FiltersMobile categories={categories}/>
 
       {/* sidebar */}
-      <div class="grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8">
+      <div class="grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8 mt-8 mr-4">
       <CategoriesSideBar categories={categories} /> 
 
         <div class="hidden md:block col-span-8 lg:col-span-9">
