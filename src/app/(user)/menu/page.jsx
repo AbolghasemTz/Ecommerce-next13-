@@ -21,19 +21,19 @@ async function Menu({ searchParams }) {
       <FiltersMobile categories={categories} />
 
       {/* sidebar */}
-      <div class="grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8 mt-8 ">
+      <div className="grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8 mt-8 ">
         <CategoriesSideBar categories={categories} />
 
-        <div class="hidden md:block col-span-8 lg:col-span-9">
-          <div class="bg-white mx-4 px-4 flex items-center gap-x-4 text-gray-400 rounded-md">
-            <div class="bg-orange-100 p-1 rounded-md flex justify-center items-center">
+        <div className="hidden md:block col-span-8 lg:col-span-9">
+          <div className="bg-white mx-4 px-4 flex items-center gap-x-4 text-gray-400 rounded-md">
+            <div className="bg-orange-100 p-1 rounded-md flex justify-center items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6 stroke-orange-500"
+                className="w-6 h-6 stroke-orange-500"
               >
                 <path
                   stroke-linecap="round"
@@ -42,10 +42,10 @@ async function Menu({ searchParams }) {
                 />
               </svg>
             </div>
-            <button class="py-4">محبوب ترین</button>
-            <button class="py-4">پربازدید ترین</button>
-            <button class="py-4">پرفروش ترین</button>
-            <button class="py-4">ارزان ترین</button>
+            <button className="py-4">محبوب ترین</button>
+            <button className="py-4">پربازدید ترین</button>
+            <button className="py-4">پرفروش ترین</button>
+            <button className="py-4">ارزان ترین</button>
           </div>
         </div>
 

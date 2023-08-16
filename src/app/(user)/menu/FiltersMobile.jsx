@@ -7,19 +7,19 @@ function FiltersMobile({ categories }) {
   const [isOpenSort, setIsOpneSort] = useState(false);
   const [isOpenBrand, setIsOpneBrand] = useState(false);
   return (
-    <div class="md:hidden  flex justify-between items-center px-4 gap-x-4 mt-4 mb-9">
+    <div className="md:hidden  flex justify-between items-center px-4 gap-x-4 mt-4 mb-9">
       <div
         onClick={() => setIsOpneSort(!isOpenSort)}
-        class="bg-white rounded  py-2 pr-4 flex items-center justify-start w-1/2 relative"
+        className="bg-white rounded  py-2 pr-4 flex items-center justify-start w-1/2 relative"
       >
-        <div class="">
+        <div className="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6 stroke-orange-600"
+            className="w-6 h-6 stroke-orange-600"
           >
             <path
               stroke-linecap="round"
@@ -28,29 +28,29 @@ function FiltersMobile({ categories }) {
             />
           </svg>
         </div>
-        <div className="">
-          <span class="text-sm font-medium text-slate-800 mr-3 ">
+        <div classNameName="">
+          <span className="text-sm font-medium text-slate-800 mr-3 ">
            مرتب سازی
           </span>
         </div>
         {isOpenSort && (
-          <div className="absolute top-12 left-0 bg-[#E5F2E9]  py-2 text-xs w-full shadow-md">
+          <div classNameName="absolute top-12 left-0 bg-[#E5F2E9]  py-2 text-xs w-full shadow-md">
             <ProductSort />
           </div>
         )}
       </div>
       <div
         onClick={() => setIsOpneBrand(!isOpenBrand)}
-        class="bg-white rounded py-2 pr-4 flex items-center justify-start w-1/2 relative"
+        className="bg-white rounded py-2 pr-4 flex items-center justify-start w-1/2 relative"
       >
-        <div class="">
+        <div className="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6 stroke-orange-600"
+            className="w-6 h-6 stroke-orange-600"
           >
             <path
               stroke-linecap="round"
@@ -59,11 +59,11 @@ function FiltersMobile({ categories }) {
             />
           </svg>
         </div>
-        <div className="">
-          <span class="text-sm font-medium text-slate-800 mr-3">فیلتر ها</span>
+        <div classNameName="">
+          <span className="text-sm font-medium text-slate-800 mr-3">فیلتر ها</span>
         </div>
         {isOpenBrand && (
-          <div className="absolute top-12 left-0 bg-[#E5F2E9]  py-2 text-xs w-full shadow-md">
+          <div classNameName="absolute top-12 left-0 bg-[#E5F2E9]  py-2 text-xs w-full shadow-md">
             <ProductFilter categories={categories} />
           </div>
         )}
