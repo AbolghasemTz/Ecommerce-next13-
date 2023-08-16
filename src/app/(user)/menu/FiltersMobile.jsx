@@ -7,10 +7,10 @@ function FiltersMobile({ categories }) {
   const [isOpenSort, setIsOpneSort] = useState(false);
   const [isOpenBrand, setIsOpneBrand] = useState(false);
   return (
-    <div class="md:hidden  flex justify-between items-center px-4 gap-x-4 mb-9">
+    <div class="md:hidden  flex justify-between items-center px-4 gap-x-4 mt-4 mb-9">
       <div
         onClick={() => setIsOpneSort(!isOpenSort)}
-        class="bg-white rounded py-2 pr-4 flex items-center justify-start w-1/2 relative"
+        class="bg-white rounded  py-2 pr-4 flex items-center justify-start w-1/2 relative"
       >
         <div class="">
           <svg

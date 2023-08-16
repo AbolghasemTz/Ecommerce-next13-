@@ -1,34 +1,34 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 import ProductFilter from "./ProductFilter";
 import ProductSort from "./ProductSort";
 import { IoIosArrowDown } from "react-icons/io";
 
 function CategoriesSideBar({ categories }) {
- 
+  const [isOpenBrand, setIsOpneBrand] = useState(false);
   return (
-    <div class="hidden md:block col-span-4 lg:col-span-3 row-span-2">
-          <div class="bg-white p-5 rounded-lg">
-            <div class="mb-7">
-              <div class="text-[#353535] font-bold text-xl mb-5">
+    <div className="hidden md:block col-span-4 lg:col-span-3 row-span-2 mr-4">
+          <div className="bg-white p-5 rounded-lg">
+            <div className="mb-7">
+              <div className="text-[#353535] font-bold text-xl mb-5">
                مرتب سازی
               </div>
              <ProductSort />
             </div>
 
-            <div class="">
-              <div class="text-[#353535] font-bold text-xl mb-5">فیلتر ها</div>
-              <div x-data="{isOpenBrand:true }" class="">
-                <div class="mb-4 flex justify-between items-center w-full py-2">
-                  <div class="flex items-center cursor-pointer">
+            <div className="">
+              <div className="text-[#353535] font-bold text-xl mb-5">فیلتر ها</div>
+              <div onClick={() => setIsOpneBrand(!isOpenBrand)} className="cursor-pointer">
+                <div className="mb-4 flex justify-between items-center w-full py-2">
+                  <div className="flex items-center cursor-pointer">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="w-6 h-6"
+                      className="w-6 h-6"
                     >
                       <path
                         stroke-linecap="round"
@@ -37,14 +37,16 @@ function CategoriesSideBar({ categories }) {
                       />
                     </svg>
 
-                    <span class="mr-3">برند محصول</span>
+                    <span className="mr-3">برند محصول</span>
                   </div>
-                  <div class="">
+                  <div className="">
                    <IoIosArrowDown size={19}/>
                   </div>
                 </div>
-
-              <ProductFilter categories={categories} />
+                {
+                  isOpenBrand &&  <ProductFilter categories={categories} />
+                }
+             
               </div>
 
               
