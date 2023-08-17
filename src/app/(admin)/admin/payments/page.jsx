@@ -8,7 +8,7 @@ function page() {
   const { isLoading, data } = useGetPayments();
   const { payments } = data || {};
 
-  if (isLoading) return <Loading />;
+  if (isLoading) return <Loading/>;
   return (
     <div>
       <div className="mb-5 flex items-center justify-between">

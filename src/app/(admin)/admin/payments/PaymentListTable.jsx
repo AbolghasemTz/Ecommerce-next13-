@@ -20,7 +20,7 @@ function PaymentListTable({ payments }) {
           </tr>
         </thead>
         <tbody>
-          {payments?.map((payment, index) => {
+          {payments.map((payment, index) => {
             return (
               <tr key={payment._id}>
                 <td className="table__td">{index + 1}</td>
@@ -32,10 +32,10 @@ function PaymentListTable({ payments }) {
                 </td>
                 <td className="table__td  whitespace-nowrap truncate">
                   <div className="flex flex-col gap-y-2">
-                    <span> {payment.user.name}</span>
-                    <span> {payment.user.email}</span>
+                    <span> {payment.user?.name}</span>
+                    <span> {payment.user?.email}</span>
                     <span className="font-bold">
-                      {payment.user.phoneNumber}
+                      {payment.user?.phoneNumber}
                     </span>
                   </div>
                 </td>
