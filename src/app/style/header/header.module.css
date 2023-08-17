@@ -4,7 +4,7 @@
 
 @layer components {
     .header {
-        @apply w-full lg:px-[108px] md:px-[55px] hidden md:block shadow-md py-[32px] sticky z-50 
+        @apply bg-white w-full lg:px-[108px] md:px-[55px] hidden md:block shadow-md py-[32px] sticky z-50 
     }
     .header_info {
         @apply h-full font-[400] flex justify-between items-center 
@@ -26,7 +26,7 @@
      /* MOBILE */
 
     .header_mobile{
-        @apply w-full md:hidden shadow-md h-20 lg:h-[12] sticky flex justify-between items-center  z-50  px-4
+        @apply bg-white w-full md:hidden shadow-md h-20 lg:h-[12] sticky flex justify-between items-center  z-50  px-4
     }
 
     .header_burgerMenu{

@@ -31,7 +31,7 @@ function AddToCart({ product }) {
     return user && user.cart?.products.some((p) => p.productId === product._id);
   };
   return (
-    <div className="flex-auto py-3 text-center text-white bg-[#417F56] rounded-md">
+    <div className="flex-auto py-2 text-sm text-center text-white bg-[#417F56] rounded-md">
       {inCart(user, product) ? (
         <Link href="/cart">ادمه سفارش</Link>
       ) : (
