@@ -36,8 +36,8 @@ function HeaderMobile() {
           <span className={`${styled.berger_menu}`}></span>
         </div>
 
-        <div>
-          <Image src="/svg/logo.svg" width={102} height={32} alt="Logo" />
+        <div className="w-[80px] h-[80px]">
+          <Image src="/image/logo.png" width={102} height={32} alt="Logo" />
         </div>
 
         {showMenu && (
