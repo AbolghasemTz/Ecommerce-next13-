@@ -1,10 +1,10 @@
 "use client";
 
-import { useGetCoupons } from "@/hooks/useCoupons";
 import Link from "next/link";
 import { HiPlusCircle } from "react-icons/hi";
 import CouponListTable from "./CouponListTable";
-import Loading from "@/common/Loading";
+import { useGetCoupons } from "@/src/app/hooks/useCoupons";
+import Loading from "@/src/app/common/Loading";
 
 function page() {
   const { isLoading, data } = useGetCoupons();

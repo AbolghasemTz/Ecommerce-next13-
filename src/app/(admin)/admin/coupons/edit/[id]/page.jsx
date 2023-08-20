@@ -1,9 +1,10 @@
 "use client";
 
-import Loading from "@/common/Loading";
-import CouponForm from "@/components/CouponForm";
-import { useGetOneCoupon, useUpdateCoupon } from "@/hooks/useCoupons";
-import { useGetProducts } from "@/hooks/useProducts";
+
+import Loading from "@/src/app/common/Loading";
+import CouponForm from "@/src/app/components/CouponForm";
+import { useGetOneCoupon, useUpdateCoupon } from "@/src/app/hooks/useCoupons";
+import { useGetProducts } from "@/src/app/hooks/useProduct";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
@@ -44,7 +45,7 @@ function page() {
     }
   };
 
-  console.log(coupon);
+  // console.log(coupon);
   useEffect(() => {
     if (coupon) {
       setType(coupon.type);

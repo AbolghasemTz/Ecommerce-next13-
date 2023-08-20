@@ -1,11 +1,6 @@
-import {
-  addNewCoupon,
-  deleteCoupon,
-  getAllCoupns,
-  getOneCoupon,
-  updateCoupon,
-} from "@/services/couponService";
+
 import { useMutation, useQuery } from "@tanstack/react-query";
+import { addNewCoupon, deleteCoupon, getAllCoupns, getOneCoupon, updateCoupon } from "../services/couponService";
 
 export const useGetCoupons = () =>
   useQuery({

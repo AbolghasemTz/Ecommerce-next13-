@@ -1,6 +1,6 @@
-import { couponListTableTHeads } from "@/constants/tableHeads";
-import { useRemoveCoupon } from "@/hooks/useCoupons";
-import { toLocalDateStringShort } from "@/utils/toLocalDate";
+import { couponListTableTHeads } from "@/src/app/constant/tableHeads";
+import { useRemoveCoupon } from "@/src/app/hooks/useCoupons";
+import { toLocalString } from "@/utils/toLocalString";
 import { useQueryClient } from "@tanstack/react-query";
 import Link from "next/link";
 import { toast } from "react-hot-toast";
@@ -61,7 +61,7 @@ function CouponListTable({ coupons }) {
                 <td className="table__td">{coupon.usageCount}</td>
                 <td className="table__td">{coupon.usageLimit}</td>
                 <td className="table__td">
-                  {toLocalDateStringShort(coupon.expireDate)}
+                  {toLocalString(coupon.expireDate)}
                 </td>
                 <td className="table__td font-bold text-lg">
                   <div className="flex items-center gap-x-4">

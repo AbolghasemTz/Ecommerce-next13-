@@ -12,6 +12,25 @@
   .btn {
     @apply bg-[#417F56] rounded-md text-[#E5F2E9] font-[500] text-[16px]
   }
+  .table__td {
+    @apply border-b  border-b-gray-300 p-3 pr-8 pb-3 text-right;
+  }
+  .badge {
+    @apply whitespace-nowrap px-3 py-1 rounded-xl;
+  }
+  /* .badge--primary {
+    @apply bg-primary-900 text-white;
+  }
+  .badge--secondary {
+    @apply bg-secondary-600 text-white;
+  } */
+  .badge--success {
+    @apply bg-green-600 text-white;
+  }
+  .badge--error {
+    @apply bg-rose-600 text-white;
+  }
+
 }
 
 html,

@@ -1,10 +1,10 @@
 "use client";
-import { useGetProducts } from "@/hooks/useProducts";
 import { useState } from "react";
-import { useAddNewCoupon } from "@/hooks/useCoupons";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
-import CouponForm from "@/components/CouponForm";
+import { useGetProducts } from "@/src/app/hooks/useProduct";
+import { useAddNewCoupon } from "@/src/app/hooks/useCoupons";
+import CouponForm from "@/src/app/components/CouponForm";
 
 export default function page() {
   const { data } = useGetProducts();

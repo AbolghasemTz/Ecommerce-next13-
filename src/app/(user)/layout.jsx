@@ -4,6 +4,7 @@ import { Toaster } from "react-hot-toast";
 import Providers from "../Providers";
 import HeaderMobile from "../components/HeaderMobile";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export const metadata = {
   title: "صفحه اصلی",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
           <HeaderMobile />
           <Header />
           <div>{children}</div>
+          <Footer />
         </Providers>
       </body>
     </html>
