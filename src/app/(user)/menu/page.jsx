@@ -4,10 +4,7 @@ import { getCategories } from "../../services/CategoriesServices";
 import queryString from "query-string";
 import Products from "./Products";
 import CategoriesSideBar from "./CategoriesSideBar";
-import Link from "next/link";
-import AddToCart from "./[slug]/AddToCart";
-import Image from "next/image";
-import { toPersianNumbersWithComma } from "@/utils/toPersianNumber";
+
 import FiltersMobile from "./FiltersMobile";
 
 export const daynamic = "force-dynamic"; //uq to cache store ssr
