@@ -127,13 +127,13 @@ function Footer() {
         <div className="md:col-span-6 col-span-12 text-white ">
           <ul className="flex md:justify-end justify-center items-center gap-x-8">
             <li className="p-4">
-              <BsInstagram className="text-2xl cursor-pointer hover:text-[#E31C25] duration-200" />
+              <BsInstagram className="text-2xl cursor-pointer hover:text-[#065f46] duration-200" />
             </li>
             <li className="p-4">
-              <BsFacebook className="text-2xl cursor-pointer hover:text-[#E31C25] duration-200" />
+              <BsFacebook className="text-2xl cursor-pointer hover:text-[#065f46] duration-200" />
             </li>
             <li className="p-4">
-              <BsWhatsapp className="text-2xl cursor-pointer hover:text-[#E31C25] duration-200" />
+              <BsWhatsapp className="text-2xl cursor-pointer hover:text-[#065f46] duration-200" />
             </li>
           </ul>
         </div>
