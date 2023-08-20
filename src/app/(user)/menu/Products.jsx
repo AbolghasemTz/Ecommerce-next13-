@@ -1,9 +1,9 @@
 import React from "react";
-import { AiFillHeart } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
 
 import { toPersianNumbersWithComma } from "@/utils/toPersianNumber";
+import LikeProduct from "./LikeProducts";
 function Products({ products }) {
   return (
     <div className="col-span-12 md:col-span-8 lg:col-span-9">
@@ -53,7 +53,7 @@ function Products({ products }) {
                 </p>
 
                 <div className="">
-                  <AiFillHeart size={20} color="red"/>
+                <LikeProduct product={product} />
                 </div>
               </div>
               <div className="font-medium text-center text-sm mb-2 sm:text-base">
@@ -86,10 +86,3 @@ function Products({ products }) {
 }
 
 export default Products;
-{
-  /* <Link href={`/menu/${product.slug}`}>مشاهده محصول</Link>
-<AddToCart product={product} /> */
-}
-{
-  /* <Link href={`/menu/${product.slug}`}>مشاهده محصول</Link> */
-}

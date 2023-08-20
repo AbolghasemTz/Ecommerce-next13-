@@ -28,9 +28,9 @@ function Header() {
   return (
     <header className={styled.header}>
       <div className={styled.header_info}>
-        <div>
+        <div className="w-[100px] h-[80px]">
           <Link href="/">
-            <Image src="/svg/logo.svg" width={155} height={51} alt="Logo" />
+            <Image src="/image/logo.png" width={90} height={80} alt="Logo" />
           </Link>
         </div>
         <ul className="flex gap-7 items-center ">
