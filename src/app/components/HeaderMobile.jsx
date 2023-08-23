@@ -65,14 +65,7 @@ function HeaderMobile() {
                       درباره ما
                     </Link>
                   </li>
-                  <li className="mt-3">
-                    <Link
-                      href="/contact"
-                      className={`${styled.header_link_mobile} `}
-                    >
-                      تماس با ما
-                    </Link>
-                  </li>
+               
                 </ul>
               </div>
             </div>

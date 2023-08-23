@@ -50,11 +50,7 @@ function Header() {
               درباره ما
             </Link>
           </li>
-          <li>
-            <Link href="/contact" className={styled.header_Link}>
-              تماس با ما
-            </Link>
-          </li>
+         
         </ul>
         <div className="flex items-center ">
           <Link href="/cart">
