@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import HpBrand from "./HpBrand";
 import DellBrand from "./DellBrand";
+import AppleBrand from "./AppleBrand";
 export const daynamic = "force-dynamic"; //uq to cache store ssr
 
 function HomeProduct({ products }) {
@@ -50,7 +51,7 @@ function HomeProduct({ products }) {
         </div>
         <div className=" ">
           <div className="col-span-12 md:col-span-8 lg:col-span-9 md:px-4 pb-6 md:py-6">
-            <DellBrand products={products} />
+            <AppleBrand products={products} />
           </div>
         </div>
       </div>

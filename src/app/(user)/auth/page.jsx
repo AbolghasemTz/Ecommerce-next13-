@@ -54,7 +54,7 @@ function AuthPage({ isOpenModal, onClose }) {
     try {
       const { message } = await mutateCheckOtp({ phoneNumber, otp });
       toast.success(message);
-      if (user.isActive) {
+      if (user?.isActive) {
         router.push("/");
         
       } else {

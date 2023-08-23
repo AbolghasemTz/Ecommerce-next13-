@@ -7,16 +7,17 @@ import LikeProduct from "./LikeProducts";
 function Products({ products }) {
   return (
     <div className="col-span-12 md:col-span-8 lg:col-span-9">
-      <div className="grid gap-x-2 gap-y-8 grid-cols-2 px-4 md:px-4  md:grid-cols-2 lg:grid-cols-4 sm:gap-x-4 md:gap-x-5 md:gap-y-10">
+      <div className="grid mb-9 gap-x-2 gap-y-8 grid-cols-2 px-4 md:px-4  md:grid-cols-2 lg:grid-cols-4 sm:gap-x-4 md:gap-x-5 md:gap-y-10">
         {products.map((product) => {
           return (
             <div key={product._id} className="bg-white rounded-md shadow-lg p-2 ">
-              <div className="mb-3 bg-gray-100 rounded-xl p-2  ">
+              <div className="mb-3 bg-gray-100 rounded-xl p-2  w-fit h-[200px]">
                 <Image
-                  src="/apple.png"
-                  alt="product"
-                  width={200}
-                  height={200}
+                 src={product.imageLink}
+                 alt="product"
+                 width={200}
+                 height={200}
+                 className="rounded-md object-cover"
                 />
               </div>
 
@@ -52,9 +53,8 @@ function Products({ products }) {
                   {product.title}
                 </p>
 
-                <div className="">
                 <LikeProduct product={product} />
-                </div>
+              
               </div>
               <div className="font-medium text-center text-sm mb-2 sm:text-base">
                 <span

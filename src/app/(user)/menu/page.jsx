@@ -21,7 +21,7 @@ async function Menu({ searchParams }) {
       <div className="grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8 mt-8 ">
         <CategoriesSideBar categories={categories} />
 
-        <div className="hidden md:block col-span-8 lg:col-span-9">
+        <div className="hidden md:block col-span-12 lg:col-span-9">
           <div className="bg-white mx-4 px-4 flex items-center gap-x-4 text-gray-400 rounded-md">
             <div className="bg-orange-100 p-1 rounded-md flex justify-center items-center">
               <svg

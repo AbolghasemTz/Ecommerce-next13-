@@ -11,10 +11,10 @@ function ContentInfo({ product }) {
           <div className="w-4/5 max-w-[250px] xl:max-w-xs">
             <Image
               className="w-full h-auto"
-              src="/apple.png"
+              src={product.imageLink}
+              alt="product"
               width={200}
               height={200}
-              alt=""
             />
             <div className="hidden md:flex items-center justify-between gap-x-4 px-2 mt-2">
               <div className="border rounded-lg p-2 border-gray-400">
@@ -241,21 +241,18 @@ function ContentInfo({ product }) {
           <div className="text-slate-800 flex flex-col gap-y-4 bg-gray-50 p-4 rounded-md">
             <div className="flex items-center">
               <div className="flex items-center">
-            
                 <span className="mr-1 text-sm font-medium">فروشنده : </span>
               </div>
               <span className="font-light text-xs mr-1">دیجی تایز</span>
             </div>
             <div className="flex items-center">
               <div className="flex items-center">
-                
                 <span className="mr-1 text-sm font-medium">گارانتی : </span>
               </div>
               <span className="font-light text-xs mr-1">18 ماه زرین خدمت</span>
             </div>
             <div className="flex items-center">
               <div className="flex items-center">
-                
                 <span className="mr-1 text-sm font-medium">ارسال توسط : </span>
               </div>
               <span className="font-light text-xs mr-2">انبار تهران</span>

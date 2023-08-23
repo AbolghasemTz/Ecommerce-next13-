@@ -2,22 +2,25 @@ import { toPersianNumbersWithComma } from '@/utils/toPersianNumber';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
-import { AiFillHeart } from 'react-icons/ai';
+
 import LikeProduct from '../menu/LikeProducts';
-function HpBrand({products}) {
+
+function AppleBrand({products}) {
+  console.log(products);
   return (
     <div className="grid gap-x-2 gap-y-8 grid-cols-2 px-4 md:px-4  md:grid-cols-2 lg:grid-cols-4 sm:gap-x-4 md:gap-x-5 md:gap-y-10">
-    { products.filter((b) => b.brand === "HP").map((product) => {
+    { products.filter((b) => b.brand === "APPLE").map((product) => {
       return (
         <div key={product._id} className="bg-white rounded-md shadow-lg p-2 ">
           <div className="mb-3 bg-gray-100 rounded-xl p-2  ">
-          <Image
-                  src={product.imageLink}
-                  alt="product"
-                  width={400}
-                  height={200}
-                  className="rounded-md"
-                />
+            <Image
+              src={product.imageLink}
+
+              alt="product"
+              width={400}
+              height={400}
+              className='rounded-md'
+            />
           </div>
 
           <div className="flex items-center justify-between w-full mb-3">
@@ -82,4 +85,4 @@ function HpBrand({products}) {
   )
 }
 
-export default HpBrand
+export default AppleBrand

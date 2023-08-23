@@ -4,7 +4,7 @@ import { useQueryClient } from "@tanstack/react-query";
 import React from "react";
 import { toast } from "react-hot-toast";
 import { useAddToCart, useDecrementFromCart } from "../../hooks/useAddToCart";
-import { toPersianNumbers } from "@/utils/toPersianNumber";
+import { toPersianNumbers, toPersianNumbersWithComma } from "@/utils/toPersianNumber";
 import Image from "next/image";
 import { BsPlusLg, BsTrash } from "react-icons/bs";
 import { AiOutlineMinus } from "react-icons/ai";
@@ -42,7 +42,7 @@ function CartItem({ cartItem }) {
       <div class="w-16 md:w-24 h-auto">
         <Image
           class="w-full h-auto"
-          src="/apple.png"
+          src={cartItem.imageLink}
           alt="product"
           width={200}
           height={200}
@@ -51,7 +51,7 @@ function CartItem({ cartItem }) {
       <div class="flex flex-col justify-between text-xs md:text-xl flex-1">
         <span class="font-bold text-slate-800">{cartItem.title}</span>
         <span class="text-orange-600 font-medium ">
-          {toPersianNumbers(cartItem.price)} تومان
+          {toPersianNumbersWithComma(cartItem.price)} تومان
         </span>
       </div>
       <div class="flex flex-col justify-between items-end">
