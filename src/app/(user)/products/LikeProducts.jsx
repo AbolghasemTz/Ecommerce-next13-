@@ -20,7 +20,7 @@ function LikeProduct({ product }) {
   };
   return (
     <div>
-      <div onClick={likeHandler} className="">
+      <div onClick={likeHandler} className="cursor-pointer">
        {product.likesCount === 1 ? <AiFillHeart size={22} color="#ef4444" /> : <AiOutlineHeart size={22} color=""/>}
       </div>
     </div>

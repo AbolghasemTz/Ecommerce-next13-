@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import LikeProduct from "../menu/LikeProducts";
+import LikeProduct from "../products/LikeProducts";
 
 function DellBrand({ products }) {
   return (
@@ -75,7 +75,7 @@ function DellBrand({ products }) {
               <hr />
               <div className="flex justify-center items-center">
                 <Link
-                  href={`/menu/${product.slug}`}
+                  href={`/products/${product.slug}`}
                   className="w-full text-center text-sm font-semibold text-[#417F56] py-1 md:text-lg"
                 >
                   مشاهده و سفارش

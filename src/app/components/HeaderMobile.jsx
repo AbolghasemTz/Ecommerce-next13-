@@ -55,8 +55,8 @@ function HeaderMobile() {
                     </Link>
                   </li>
                   <li className="mt-3">
-                    <Link href="/about" className={styled.header_link_mobile}>
-                      منو
+                    <Link href="/products" className={styled.header_link_mobile}>
+                     محصولات
                     </Link>
                   </li>
 

@@ -40,8 +40,8 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/menu" className={styled.header_Link}>
-              منو
+            <Link href="/products" className={styled.header_Link}>
+            محصولات
             </Link>
           </li>
 

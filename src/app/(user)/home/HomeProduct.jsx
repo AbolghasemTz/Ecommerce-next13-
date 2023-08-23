@@ -15,7 +15,7 @@ function HomeProduct({ products }) {
           <h3 className="text-xl font-semibold ">
             لپ تاپ های اچ پی
           </h3>
-          <Link href="/menu" className="text-sm">
+          <Link href="/products" className="text-sm">
             مشاهده همه
           </Link>
         </div>
@@ -30,7 +30,7 @@ function HomeProduct({ products }) {
           <h3 className="text-xl font-semibold  ">
             لپ تاپ های دل
           </h3>
-          <Link href="/menu" className="text-sm">
+          <Link href="/products" className="text-sm">
             مشاهده همه
           </Link>
         </div>
@@ -45,7 +45,7 @@ function HomeProduct({ products }) {
           <h3 className="text-xl font-semibold  ">
             لپ تاپ های اپل
           </h3>
-          <Link href="/menu" className="text-sm">
+          <Link href="/products" className="text-sm">
             مشاهده همه
           </Link>
         </div>

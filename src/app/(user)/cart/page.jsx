@@ -22,9 +22,9 @@ function page() {
 
   if (!user.cart?.products || user.cart?.products.length === 0)
     return (
-      <div>
-        <p>سبد خرید خالی است</p>
-        <Link href="/menu" className="text-lg font-bold text-primary-900">
+      <div className="h-screen text-center">
+        <p className="my-8">سبد خرید خالی است</p>
+        <Link href="/products" className="text-lg font-bold text-green-900">
           رفتن به صفحه محصولات
         </Link>
       </div>

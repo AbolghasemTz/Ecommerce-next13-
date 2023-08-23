@@ -71,7 +71,7 @@ function Products({ products }) {
               <hr />
               <div className="flex justify-center items-center">
                 <Link
-                  href={`/menu/${product.slug}`}
+                  href={`/products/${product.slug}`}
                   className="w-full text-center text-sm font-semibold text-[#417F56] py-1 md:text-lg"
                 >
                   مشاهده و سفارش
