@@ -1,6 +1,6 @@
-import { adminPaymentListTableTHeads } from "@/src/app/constant/tableHeads";
-import { toLocalString } from "@/utils/toLocalString";
-import { toPersianNumbersWithComma } from "@/utils/toPersianNumber";
+import { adminPaymentListTableTHeads } from "../../../constant/tableHeads";
+import { toLocalString } from "../../../utils/toLocalString";
+import { toPersianNumbersWithComma } from "../../../utils/toPersianNumber";
 import Link from "next/link";
 import { HiEye } from "react-icons/hi";
 

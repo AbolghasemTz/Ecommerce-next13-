@@ -1,11 +1,11 @@
 "use client";
-import { useAddToCart } from "@/src/app/hooks/useAddToCart";
-import { useGetUser } from "@/src/app/hooks/useAuth";
 import { useQueryClient } from "@tanstack/react-query";
 import Link from "next/link";
 // import { useRouter } from "next/navigation";
 import React from "react";
 import { toast } from "react-hot-toast";
+import { useAddToCart } from "../../../hooks/useAddToCart";
+import { useGetUser } from "../../../hooks/useAuth";
 
 function AddToCart({ product }) {
   const queryClient = useQueryClient();

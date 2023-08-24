@@ -1,9 +1,9 @@
-import { toPersianNumbersWithComma } from "@/utils/toPersianNumber";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 import LikeProduct from "../products/LikeProducts";
+import { toPersianNumbersWithComma } from "../../utils/toPersianNumber";
 
 function AppleBrand({ products }) {
   console.log(products);

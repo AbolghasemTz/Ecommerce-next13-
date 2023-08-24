@@ -1,9 +1,8 @@
 import React from "react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { toast } from "react-hot-toast";
-import Loading from "../../common/Loading";
 import { ceratedPayment } from "../../services/paymentService";
-import { toPersianNumbersWithComma } from "@/utils/toPersianNumber";
+import { toPersianNumbersWithComma } from "../../utils/toPersianNumber";
 
 function CartSummery({ payDetail }) {
   const { totalOffAmount, totalPrice, totalGrossPrice } = payDetail;

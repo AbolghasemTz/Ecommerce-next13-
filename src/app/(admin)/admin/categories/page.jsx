@@ -2,8 +2,8 @@
 import React from 'react'
 import CategoryListTabel from './CategoryListTabel';
 import Link from 'next/link';
-import Loading from '@/src/app/common/Loading';
-import { useGetCategories } from '@/src/app/hooks/useCategories';
+import Loading from '../../../common/Loading';
+import { useGetCategories } from '../../../hooks/useCategories';
 
 function page() {
  const {isLoading,data} =  useGetCategories();

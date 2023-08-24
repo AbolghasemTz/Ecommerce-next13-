@@ -1,11 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import TextField from "@/src/app/common/TextField";
-import { useGetUser } from "@/src/app/hooks/useAuth";
-import { includeObj } from "@/utils/objectUtils";
-import Loading from "@/src/app/common/Loading";
+import TextField from "../../../common/TextField";
+import { useGetUser } from "../../../hooks/useAuth";
+import { includeObj } from "../../../utils/objectUtils";
+import Loading from "../../../common/Loading";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { updateProfile } from "@/src/app/services/AuthServices";
+import { updateProfile } from "../../../services/AuthServices";
 import { toast } from "react-hot-toast";
 
 function MePage() {

@@ -2,9 +2,9 @@
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
-import { useGetProducts } from "@/src/app/hooks/useProduct";
-import { useAddNewCoupon } from "@/src/app/hooks/useCoupons";
-import CouponForm from "@/src/app/components/CouponForm";
+import { useGetProducts } from "../../../../hooks/useProduct";
+import { useAddNewCoupon } from "../../../../hooks/useCoupons";
+import CouponForm from "../../../../components/CouponForm";
 
 export default function page() {
   const { data } = useGetProducts();

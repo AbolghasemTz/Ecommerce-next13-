@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { toPersianNumbersWithComma } from "@/utils/toPersianNumber";
 import AddToCart from "./AddToCart";
+import { toPersianNumbersWithComma } from "../../../utils/toPersianNumber";
 
 function ContentInfo({ product }) {
   return (
@@ -20,7 +20,7 @@ function ContentInfo({ product }) {
               <div className="border rounded-lg p-2 border-gray-400">
                 <Image
                   className="w-full h-auto"
-                  src="/apple.png"
+                  src="/slide1.jpg"
                   width={200}
                   height={200}
                   alt=""
@@ -29,7 +29,7 @@ function ContentInfo({ product }) {
               <div className="border rounded-lg p-2 border-gray-400">
                 <Image
                   className="w-full h-auto"
-                  src="/apple.png"
+                  src="/slide2.webp"
                   width={200}
                   height={200}
                   alt=""
@@ -38,7 +38,7 @@ function ContentInfo({ product }) {
               <div className="border rounded-lg p-2 border-gray-400">
                 <Image
                   className="w-full h-auto"
-                  src="/apple.png"
+                  src="/slide1.jpg"
                   width={200}
                   height={200}
                   alt=""

@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { toPersianNumbersWithComma } from "@/utils/toPersianNumber";
 import LikeProduct from "./LikeProducts";
+import { toPersianNumbersWithComma } from "../../utils/toPersianNumber";
 function Products({ products }) {
   return (
     <div className="col-span-12 md:col-span-8 lg:col-span-9">

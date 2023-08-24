@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useGetUser } from '../../hooks/useAuth'
-import { toLocalString } from '@/utils/toLocalString';
+import { toLocalString } from '../../utils/toLocalString';
 import Loading from '../../common/Loading';
 import PaymentTabel from './payments/PaymentTabel';
 import Link from 'next/link';

@@ -2,8 +2,8 @@
 
 import ProductTabel from './ProductTabel';
 import Link from 'next/link';
-import Loading from '@/src/app/common/Loading';
-import { useGetProducts } from '@/src/app/hooks/useProduct';
+import Loading from '../../../common/Loading';
+import { useGetProducts } from '../../../hooks/useProduct';
 
 function page() {
   const {isLoading,data} =  useGetProducts();

@@ -1,9 +1,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { userListTabelHeads } from '@/src/app/constant/tableHeads';
-import { toLocalString } from '@/utils/toLocalString';
 import { GrView } from 'react-icons/gr';
+import { userListTabelHeads } from '../../../constant/tableHeads';
+import { toLocalString } from '../../../utils/toLocalString';
 
 function UserTabel({users}) {
     console.log(users);

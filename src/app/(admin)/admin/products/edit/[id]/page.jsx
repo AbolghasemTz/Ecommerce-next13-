@@ -2,10 +2,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
-import { useGetProductById, useUpdateProduct } from "@/src/app/hooks/useProduct";
-import { useGetCategories } from "@/src/app/hooks/useCategories";
-import ProductForm from "@/src/app/components/ProductForm";
-import { includeObj } from "@/utils/objectUtils";
+import { useGetProductById, useUpdateProduct } from "../../../../../hooks/useProduct";
+import { useGetCategories } from "../../../../../hooks/useCategories";
+import ProductForm from "../../../../../components/ProductForm";
+import { includeObj } from "../../../../../utils/objectUtils";
 const includesProductKey = [
   "title",
   "description",

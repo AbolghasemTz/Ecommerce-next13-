@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useParams } from 'next/navigation'
-import { useGetCategoryById } from '@/src/app/hooks/useCategories';
+import { useGetCategoryById } from '../../../../hooks/useCategories';
 
 function page() {
     const {id} = useParams();

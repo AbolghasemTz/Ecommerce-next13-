@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { toast } from 'react-hot-toast'
 import { useMutation } from '@tanstack/react-query'
-import { completeProfile } from '@/app/services/AuthServices'
-import TextField from '@/app/common/TextField'
+import { completeProfile } from '../../services/AuthServices'
+import TextField from '../../common/TextField'
 
 function page() {
   const [name,setName] = useState("")
@@ -27,7 +27,7 @@ console.log(user);
     }
   }
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center min-h-screen mt-8">
       <div className="md:w-full sm:max-w-sm w-[90vw]">
         <form className='space-y-8' onSubmit={submitHandler}>
           <TextField name="name" label="نام و نام خانوادگی" value={user?.name} onChange={(e) => setName(e.target.value)}/>

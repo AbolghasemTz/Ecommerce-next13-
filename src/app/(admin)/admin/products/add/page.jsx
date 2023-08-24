@@ -5,9 +5,9 @@ import { TagsInput } from "react-tag-input-component";
 // import Select from "react-select";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
-import { useGetCategories } from "@/src/app/hooks/useCategories";
-import { useAddProduct } from "@/src/app/hooks/useProduct";
-import ProductForm from "@/src/app/components/ProductForm";
+import { useGetCategories } from "../../../../hooks/useCategories";
+import { useAddProduct } from "../../../../hooks/useProduct";
+import ProductForm from "../../../../components/ProductForm";
 
 const productFormData = [
   { id: 1, label: "عنوان", name: "title" },

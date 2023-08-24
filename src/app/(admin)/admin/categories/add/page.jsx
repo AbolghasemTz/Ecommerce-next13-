@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
-import { useAddCategory } from "@/src/app/hooks/useCategories";
-import CategoryForm from "@/src/app/components/CategoryForm";
+import { useAddCategory } from "../../../../hooks/useCategories";
+import CategoryForm from "../../../../components/CategoryForm";
 
 function page() {
   const router = useRouter();

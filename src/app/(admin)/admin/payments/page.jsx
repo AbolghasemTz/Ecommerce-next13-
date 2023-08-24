@@ -1,8 +1,8 @@
 "use client";
 
-import Loading from "@/src/app/common/Loading";
+import Loading from "../../../common/Loading";
 import PaymentListTable from "./PaymentListTable";
-import { useGetPayments } from "@/src/app/hooks/usePayments";
+import { useGetPayments } from "../../..//hooks/usePayments";
 
 
 function page() {

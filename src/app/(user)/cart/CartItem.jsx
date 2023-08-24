@@ -4,10 +4,10 @@ import { useQueryClient } from "@tanstack/react-query";
 import React from "react";
 import { toast } from "react-hot-toast";
 import { useAddToCart, useDecrementFromCart } from "../../hooks/useAddToCart";
-import { toPersianNumbers, toPersianNumbersWithComma } from "@/utils/toPersianNumber";
 import Image from "next/image";
 import { BsPlusLg, BsTrash } from "react-icons/bs";
 import { AiOutlineMinus } from "react-icons/ai";
+import { toPersianNumbers, toPersianNumbersWithComma } from "../../utils/toPersianNumber";
 function CartItem({ cartItem }) {
   const { mutateAsync: addToCartAysnc } = useAddToCart();
   const { mutateAsync: decFromCart } = useDecrementFromCart();

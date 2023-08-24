@@ -3,9 +3,9 @@ export const dynamic = "force-dynamic"
 import React, { useEffect, useState } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { toast } from 'react-hot-toast';
-import { useGetCategoryById, useUpdateCategory } from '@/src/app/hooks/useCategories';
-import CategoryForm, { categoryType } from '@/src/app/components/CategoryForm';
-import { includeObj } from '@/utils/objectUtils';
+import { useGetCategoryById, useUpdateCategory } from '../../../../../hooks/useCategories';
+import CategoryForm, { categoryType } from '../../../../../components/CategoryForm';
+import { includeObj } from '../../../../../utils/objectUtils';
 const includesCategoryKey = ["title","englishTitle", "description"]
 function page() {
   const {id} = useParams();

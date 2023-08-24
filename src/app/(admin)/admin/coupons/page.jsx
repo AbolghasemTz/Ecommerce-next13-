@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { HiPlusCircle } from "react-icons/hi";
 import CouponListTable from "./CouponListTable";
-import { useGetCoupons } from "@/src/app/hooks/useCoupons";
-import Loading from "@/src/app/common/Loading";
+import { useGetCoupons } from "../../../hooks/useCoupons";
+import Loading from "../../../common/Loading";
 
 function page() {
   const { isLoading, data } = useGetCoupons();

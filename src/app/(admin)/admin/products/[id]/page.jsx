@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useParams } from 'next/navigation'
-import { useGetProductById } from '@/src/app/hooks/useProduct';
+import { useGetProductById } from '../../../../hooks/useProduct';
 
 function page() {
     const {id} = useParams()

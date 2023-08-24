@@ -9,7 +9,7 @@ import {
   BsFacebook,
 } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
-import { toPersianNumbers } from "@/utils/toPersianNumber";
+import { toPersianNumbers } from "../utils/toPersianNumber";
 
 function Footer() {
   return (

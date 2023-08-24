@@ -1,8 +1,8 @@
 "use client"
 import React from "react";
 import PaymentTabel from "./PaymentTabel";
-import Loading from "@/src/app/common/Loading";
-import { useGetUser } from "@/src/app/hooks/useAuth";
+import Loading from "../../../common/Loading";
+import { useGetUser } from "../../../hooks/useAuth";
 
 function payments() {
    const {data,isLoading} =  useGetUser();

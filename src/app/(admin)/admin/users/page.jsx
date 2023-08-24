@@ -1,8 +1,8 @@
 "use client"
 import React from 'react'
 import UserTabel from './UserTabel';
-import { useGetAllUser } from '@/src/app/hooks/useAuth';
-import Loading from '@/src/app/common/Loading';
+import { useGetAllUser } from '../../../hooks/useAuth';
+import Loading from "../../../common/Loading"
 
 function page() {
    const {isLoading , data}= useGetAllUser();

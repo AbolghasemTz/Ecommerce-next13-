@@ -1,8 +1,8 @@
-import { toPersianNumbersWithComma } from "@/utils/toPersianNumber";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import LikeProduct from "../products/LikeProducts";
+import { toPersianNumbersWithComma } from "../../utils/toPersianNumber";
 function HpBrand({ products }) {
   return (
     <div className="grid gap-x-2 gap-y-8 grid-cols-2 px-4 md:px-4  md:grid-cols-2 lg:grid-cols-4 sm:gap-x-4 md:gap-x-5 md:gap-y-10">

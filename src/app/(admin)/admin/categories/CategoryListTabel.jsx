@@ -1,5 +1,5 @@
-import { categoriesTabelTHead } from '@/src/app/constant/tableHeads';
-import { useRemoveCategory } from '@/src/app/hooks/useCategories';
+import { categoriesTabelTHead } from '../../../constant/tableHeads';
+import { useRemoveCategory } from '../../../hooks/useCategories';
 import { useQueryClient } from '@tanstack/react-query';
 import Link from 'next/link';
 import React from 'react'

@@ -1,10 +1,10 @@
 "use client";
 
 
-import Loading from "@/src/app/common/Loading";
-import CouponForm from "@/src/app/components/CouponForm";
-import { useGetOneCoupon, useUpdateCoupon } from "@/src/app/hooks/useCoupons";
-import { useGetProducts } from "@/src/app/hooks/useProduct";
+import Loading from "../../../../../common/Loading";
+import CouponForm from "../../../../../components/CouponForm";
+import { useGetOneCoupon, useUpdateCoupon } from "../../../../../hooks/useCoupons";
+import { useGetProducts } from "../../../../../hooks/useProduct";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";

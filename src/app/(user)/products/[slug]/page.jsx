@@ -1,15 +1,13 @@
-import {
-  getOneProductsBySlug,
-  getProducts,
-} from "@/src/app/services/ProductServices";
+
 import AddToCart from "./AddToCart";
-import { toPersianNumbersWithComma } from "@/utils/toPersianNumber";
 import RoadPage from "./RoadPage";
 import CategrySinglePage from "./CategrySinglePage";
 import RoadPageDescktop from "./RoadPageDescktop";
 import ContentInfo from "./ContentInfo";
+import { getOneProductsBySlug, getProducts } from "../../../services/ProductServices";
+import { toPersianNumbersWithComma } from "../../../utils/toPersianNumber";
 export const dynamic = "force-static";
-export const dynamicParams = false;
+// export const dynamicParams = false;
 
 async function page({ params }) {
   const { slug } = params;

@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic"
-import { productTabelTHead } from '@/src/app/constant/tableHeads'
-import { useRemoveProducts } from '@/src/app/hooks/useProduct'
+import { productTabelTHead } from '../../../constant/tableHeads'
+import { useRemoveProducts } from '../../../hooks/useProduct'
 
 import { useQueryClient } from '@tanstack/react-query'
 import Link from 'next/link'
@@ -9,7 +9,7 @@ import { toast } from 'react-hot-toast'
 import { GrView } from 'react-icons/gr';
 import { CiTrash } from 'react-icons/ci';
 import { AiOutlineEdit } from 'react-icons/ai';
-import { toPersianNumbers, toPersianNumbersWithComma } from '@/utils/toPersianNumber'
+import { toPersianNumbers, toPersianNumbersWithComma } from '../../../utils/toPersianNumber'
 function ProductTabel({products}) {
  const {mutateAsync} =  useRemoveProducts()
  const queryClient = useQueryClient()
