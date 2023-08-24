@@ -157,7 +157,7 @@ function AuthPage({ isOpenModal, onClose }) {
             {step === 1 && (
               <div className="text-center pb-[12px] mt-[16px] ">
                 <p className="text-[#353535] md:text-[11px] text-[10px] font-[400] ">
-                  ورود و عضویت در ترخینه به منزله قبول{" "}
+                  ورود و عضویت در فروشگاه امید به منزله قبول{" "}
                   <span className="text-[#417F56]">قوانین و مقررات</span> است
                 </p>
               </div>
