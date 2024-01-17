@@ -48,7 +48,7 @@ function HeaderMobile() {
                 className={styled.show_closeIcon}
               />
               <div className={styled.show_items}>
-                <ul>
+                <ul >
                   <li className="mt-8">
                     <Link href="/" className={styled.header_link_mobile}>
                       صفحه اصلی

@@ -41,16 +41,16 @@
     }
 
     .show_menu{
-        @apply absolute md:hidden p-0 top-20 left-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-start
+        @apply absolute md:hidden p-0 top-14 left-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-start
     }
     .show_menuDrower{
-        @apply w-[60%] h-full bg-[#E5F2E9] flex flex-col items-center px-4 py-10 relative
+        @apply w-[60%] h-full bg-[#E5F2E9] pr-8 pt-6  relative
     }
     .show_closeIcon{
         @apply text-3xl text-[#417F56]  cursor-pointer  absolute  top-4 left-4 
     }
     .show_items{
-        @apply flex justify-center items-center flex-col
+        @apply flex flex-col justify-between items-start 
     }
 
     .header_mobileIcons{

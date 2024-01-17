@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { getProducts } from "../../services/ProductServices";
 import { getCategories } from "../../services/CategoriesServices";
@@ -6,6 +7,7 @@ import Products from "./Products";
 import CategoriesSideBar from "./CategoriesSideBar";
 
 import FiltersMobile from "./FiltersMobile";
+import Loading from "../../common/Loading";
 
 export const daynamic = "force-dynamic"; //uq to cache store ssr
 
@@ -15,6 +17,7 @@ async function Menu({ searchParams }) {
 
   return (
     <>
+    
       <FiltersMobile categories={categories} />
 
       {/* sidebar */}

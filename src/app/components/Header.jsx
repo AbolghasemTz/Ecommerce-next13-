@@ -19,14 +19,15 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
 
-  const { data } = useGetUser();
+  const { data ,isLoading} = useGetUser();
   const { user, cart } = data || {};
   const logoutHandler =async()=>{
     await loguot();
     document.location.href = "/"
   }
+
   return (
-    <header className={styled.header}>
+    <header className={`${styled.header}  ${isLoading ? "blur-sm opacity-50" :""}`}>
       <div className={styled.header_info}>
         <div className="w-[100px] h-[80px]">
           <Link href="/">
